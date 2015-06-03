@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: londonbarifc
+        psr4_prefix: londonbarifc
+        src_path: app

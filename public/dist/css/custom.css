@@ -1,0 +1,116 @@
+.bkg-feature {
+    background-color: #fefefe;
+    background-image: url(../../img/bg-default_500d4eedf09c3727017759.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+}
+
+.tm-block {
+    display: block;
+    width: 100%;
+}
+.tm-block-light {
+    background-color: #fefefe;
+}
+
+.tm-block-dark {
+    background-color: #444;
+    color: #f2f2f2;
+}
+
+.tm-block-red {
+    background-color: #c51827;
+    color: #f2f2f2;
+}
+
+.main-header {
+    height: 158px;
+    width: 100%;
+
+    display: block;
+    background-color: #D3171E;
+    background-image: url(../../img/main-header.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.brand {
+    position: relative;
+    height: 100px;
+}
+.brand > img {
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.social-bar {
+    position: relative;
+    float: right;
+    top: -100px;
+    width: 200px;
+    height: 36px;
+
+}
+
+ul.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.social-list li {
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-right: 10px;
+}
+
+.uk-navbar-red {
+    background: #D3171E;
+    color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background-origin: border-box;
+    background-image: -webkit-linear-gradient(top, #e8171e, #D3171E);
+    background-image: linear-gradient(to bottom, #e8171e, #D3171E);
+}
+
+.navbar-white-text > * {
+    color: #fff;
+
+    text-shadow: none;
+}
+
+.navbar-white-text > li > a {
+    color: #fff;
+    text-shadow: none;
+}
+
+.navbar-white-text > li {
+    padding: 2px;
+}
+
+.navbar-white-text > li :hover {
+
+}
+
+.feature-title{
+    margin : 0 50px;
+    background-color: rgba(0,0,0,.7);
+    border: 1px solid rgba(211,23,30,.8);
+    text-transform: capitalize;
+}
+
+.feature-title-red{
+    background-color: rgba(211,23,30,.8);
+}
+
+.customisable-border{
+    border: none;
+}
