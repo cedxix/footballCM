@@ -1,5 +1,42 @@
 @extends('master')
 
+@section('feature')
+    <div class="">
+        <div class="uk-slidenav-position" data-uk-slideshow>
+            <ul class="uk-slideshow uk-overlay-active" style="height: 400px;overflow: hidden;">
+                <li aria-hidden="false" class="uk-active"
+                    style="animation-duration: 500ms; -webkit-animation-duration: 500ms; height: 411px;">
+                    <div class="uk-cover-background uk-position-cover"
+                         style="background-image: url(img/news/1400063233_8397.jpg);"></div>
+                    <img src="img/news/1400063233_8397.jpg" width="800" height="400" alt=""
+                         style="width: 100%; height: auto;">
+
+                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div class="">
+                            <h2 class="uk-heading-large feature-title">London Bari Reserves Double Winners
+                                2013/2014</h2>
+                        </div>
+
+
+                    </div>
+                </li>
+                <li aria-hidden="true"
+                    style="animation-duration: 500ms; -webkit-animation-duration: 500ms; height: 411px;"
+                    class="">
+                    <div class="uk-cover-background uk-position-cover"
+                         style="background-image: url(http://getuikit.com/docs/images/placeholder_800x400_2.jpg);"></div>
+                    <img src="http://getuikit.com/docs/images/placeholder_800x400_2.jpg" width="800" height="400" alt=""
+                         style="width: 100%; height: auto;">
+                </li>
+            </ul>
+            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"
+               style="color: rgba(255,255,255,0.4)"></a>
+            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"
+               style="color: rgba(255,255,255,0.4)"></a>
+        </div>
+    </div>
+@endsection
+
 @section('content')
     <div class="uk-block uk-width-1-1">
         <div class="uk-block-content">
@@ -296,4 +333,10 @@
                 </div>
             </div>
         </div>
+@endsection
+
+@section('custom-js')
+    <script type="application/javascript" src="dist/js/components/slideset.js"></script>
+    <script type="application/javascript" src="dist/js/components/slideshow.js"></script>
+    <script type="application/javascript" src="dist/js/components/slideshow-fx.min.js"></script>
 @endsection
