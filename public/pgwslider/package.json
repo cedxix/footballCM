@@ -1,0 +1,55 @@
+{
+  "name": "pgwslider",
+  "title": "PgwSlider",
+  "description": "Responsive and lightweight Slider plugin for jQuery / Zepto",
+  "version": "2.3.1",
+  "main": "pgwslider.js",
+  "homepage": "https://pgwjs.com/pgwslider",
+  "author": {
+    "name": "Jonathan M. Piat"
+  },
+  "license": "GNU GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pagawa/PgwSlider.git"
+  },
+  "keywords": [
+    "slider",
+    "slideshow",
+    "gallery",
+    "responsive",
+    "mobile",
+    "image",
+    "animation",
+    "ui",
+    "jquery",
+    "jquery-plugin",
+    "zepto"
+  ],
+  "bugs": {
+    "url": "https://github.com/Pagawa/PgwSlider/issues"
+  },
+  "gitHead": "a788b01d20345b2033a9f763a8d19537b29530ea",
+  "_id": "pgwslider@2.3.1",
+  "scripts": {},
+  "_shasum": "31f51aca32eaf12cd180d28fb5c256c1c95c1508",
+  "_from": "pgwslider@*",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "pagawa",
+    "email": "pgwjs@pagawa.com"
+  },
+  "maintainers": [
+    {
+      "name": "pagawa",
+      "email": "pgwjs@pagawa.com"
+    }
+  ],
+  "dist": {
+    "shasum": "31f51aca32eaf12cd180d28fb5c256c1c95c1508",
+    "tarball": "http://registry.npmjs.org/pgwslider/-/pgwslider-2.3.1.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/pgwslider/-/pgwslider-2.3.1.tgz",
+  "readme": "ERROR: No README data found!"
+}

@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80c7cbd9-a7ca-412c-ac23-251db1a7e31a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/pgwslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/pgwslider.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/pgwslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/pgwslider.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pgwslider/pgwslider.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/css/custom.css" afterPath="$PROJECT_DIR$/public/dist/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/master.blade.php" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
@@ -31,14 +41,14 @@
     <favorites_list name="LondonBariFC" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.32129964">
+    <splitter split-orientation="horizontal" split-proportion="0.33458647">
       <split-first>
         <leaf>
           <file leaf-file-name=".env" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.env">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.18421052" vertical-offset="0" max-vertical-offset="570">
-                  <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.6631579" vertical-offset="0" max-vertical-offset="570">
+                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -71,41 +81,77 @@
           <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-18.433332" vertical-offset="1778" max-vertical-offset="2625">
-                  <caret line="111" column="127" selection-start-line="111" selection-start-column="127" selection-end-line="111" selection-end-column="127" />
+                <state vertical-scroll-proportion="-17.666666" vertical-offset="268" max-vertical-offset="1092">
+                  <caret line="102" column="74" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/readme.md">
+          <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.82944345" vertical-offset="0" max-vertical-offset="609">
-                  <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+                <state vertical-scroll-proportion="1.1157495" vertical-offset="0" max-vertical-offset="1260">
+                  <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#1090#2726#0#HTML" expanded="false" />
+                    <element signature="e#2731#4143#0#HTML" expanded="false" />
+                    <element signature="e#2936#2977#0#HTML" expanded="true" />
+                    <element signature="e#4148#16079#0#HTML" expanded="false" />
+                    <element signature="e#9051#9073#0#HTML" expanded="true" />
+                    <element signature="e#10171#10193#0#HTML" expanded="true" />
+                    <element signature="e#11291#11313#0#HTML" expanded="true" />
+                    <element signature="e#12411#12433#0#HTML" expanded="true" />
+                    <element signature="e#13531#13553#0#HTML" expanded="true" />
+                    <element signature="e#14651#14673#0#HTML" expanded="true" />
+                    <element signature="e#16084#28014#0#HTML" expanded="false" />
+                    <element signature="e#20986#21008#0#HTML" expanded="true" />
+                    <element signature="e#22106#22128#0#HTML" expanded="true" />
+                    <element signature="e#23226#23248#0#HTML" expanded="true" />
+                    <element signature="e#24346#24368#0#HTML" expanded="true" />
+                    <element signature="e#25466#25488#0#HTML" expanded="true" />
+                    <element signature="e#26586#26608#0#HTML" expanded="true" />
+                    <element signature="e#28050#29843#0#HTML" expanded="false" />
+                    <element signature="e#29848#30976#0#HTML" expanded="false" />
+                    <element signature="e#29963#29989#0#HTML" expanded="true" />
+                    <element signature="e#30981#31402#0#HTML" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/dist/css/custom.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2562">
+                  <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+          <file leaf-file-name="pgwslider.min.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/pgwslider/pgwslider.min.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-15.4" vertical-offset="0" max-vertical-offset="630">
-                  <caret line="340" column="96" selection-start-line="340" selection-start-column="96" selection-end-line="340" selection-end-column="96" />
-                  <folding>
-                    <element signature="e#44#2075#0#HTML" expanded="false" />
-                    <element signature="e#2113#3749#0#HTML" expanded="false" />
-                    <element signature="e#2412#3723#0#HTML" expanded="false" />
-                    <element signature="e#3754#5166#0#HTML" expanded="false" />
-                    <element signature="e#5171#17102#0#HTML" expanded="false" />
-                    <element signature="e#17107#29037#0#HTML" expanded="false" />
-                    <element signature="e#29077#31030#0#HTML" expanded="false" />
-                    <element signature="e#31039#32263#0#HTML" expanded="false" />
-                    <element signature="e#32272#32733#0#HTML" expanded="false" />
-                  </folding>
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pgwslider.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/pgwslider/pgwslider.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4641">
+                  <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -134,9 +180,11 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/public/pgwslider/pgwslider.min.css" />
+        <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
+        <option value="$PROJECT_DIR$/public/dist/css/custom.css" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
       </list>
     </option>
   </component>
@@ -197,6 +245,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LondonBariFC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LondonBariFC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LondonBariFC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LondonBariFC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LondonBariFC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LondonBariFC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -207,8 +309,13 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uikit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\APPS\LondonBariFC\public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -250,35 +357,67 @@
       <option name="number" value="Default" />
       <updated>1433339279814</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update Readme.md">
+      <created>1433414404426</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1433414404426</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24222222" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10748663" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14278075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14278075" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -296,7 +435,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Laravel 5 Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel 5 Setup" />
+    <MESSAGE value="Update Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Readme.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -332,15 +472,27 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7182">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#44#2075#0#HTML" expanded="false" />
-            <element signature="e#2113#3749#0#HTML" expanded="false" />
-            <element signature="e#2412#3723#0#HTML" expanded="false" />
-            <element signature="e#3754#5166#0#HTML" expanded="false" />
-            <element signature="e#5171#17102#0#HTML" expanded="false" />
-            <element signature="e#17107#29037#0#HTML" expanded="false" />
-            <element signature="e#29077#31030#0#HTML" expanded="false" />
-            <element signature="e#31039#32263#0#HTML" expanded="false" />
-            <element signature="e#32272#32733#0#HTML" expanded="false" />
+            <element signature="e#1090#2726#0#HTML" expanded="false" />
+            <element signature="e#2731#4143#0#HTML" expanded="false" />
+            <element signature="e#2936#2977#0#HTML" expanded="true" />
+            <element signature="e#4148#16079#0#HTML" expanded="false" />
+            <element signature="e#9051#9073#0#HTML" expanded="true" />
+            <element signature="e#10171#10193#0#HTML" expanded="true" />
+            <element signature="e#11291#11313#0#HTML" expanded="true" />
+            <element signature="e#12411#12433#0#HTML" expanded="true" />
+            <element signature="e#13531#13553#0#HTML" expanded="true" />
+            <element signature="e#14651#14673#0#HTML" expanded="true" />
+            <element signature="e#16084#28014#0#HTML" expanded="false" />
+            <element signature="e#20986#21008#0#HTML" expanded="true" />
+            <element signature="e#22106#22128#0#HTML" expanded="true" />
+            <element signature="e#23226#23248#0#HTML" expanded="true" />
+            <element signature="e#24346#24368#0#HTML" expanded="true" />
+            <element signature="e#25466#25488#0#HTML" expanded="true" />
+            <element signature="e#26586#26608#0#HTML" expanded="true" />
+            <element signature="e#28050#29843#0#HTML" expanded="false" />
+            <element signature="e#29848#30976#0#HTML" expanded="false" />
+            <element signature="e#29963#29989#0#HTML" expanded="true" />
+            <element signature="e#30981#31402#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -351,6 +503,10 @@
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -392,15 +548,27 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#44#2075#0#HTML" expanded="false" />
-            <element signature="e#2113#3749#0#HTML" expanded="false" />
-            <element signature="e#2412#3723#0#HTML" expanded="false" />
-            <element signature="e#3754#5166#0#HTML" expanded="false" />
-            <element signature="e#5171#17102#0#HTML" expanded="false" />
-            <element signature="e#17107#29037#0#HTML" expanded="false" />
-            <element signature="e#29077#31030#0#HTML" expanded="false" />
-            <element signature="e#31039#32263#0#HTML" expanded="false" />
-            <element signature="e#32272#32733#0#HTML" expanded="false" />
+            <element signature="e#1090#2726#0#HTML" expanded="false" />
+            <element signature="e#2731#4143#0#HTML" expanded="false" />
+            <element signature="e#2936#2977#0#HTML" expanded="true" />
+            <element signature="e#4148#16079#0#HTML" expanded="false" />
+            <element signature="e#9051#9073#0#HTML" expanded="true" />
+            <element signature="e#10171#10193#0#HTML" expanded="true" />
+            <element signature="e#11291#11313#0#HTML" expanded="true" />
+            <element signature="e#12411#12433#0#HTML" expanded="true" />
+            <element signature="e#13531#13553#0#HTML" expanded="true" />
+            <element signature="e#14651#14673#0#HTML" expanded="true" />
+            <element signature="e#16084#28014#0#HTML" expanded="false" />
+            <element signature="e#20986#21008#0#HTML" expanded="true" />
+            <element signature="e#22106#22128#0#HTML" expanded="true" />
+            <element signature="e#23226#23248#0#HTML" expanded="true" />
+            <element signature="e#24346#24368#0#HTML" expanded="true" />
+            <element signature="e#25466#25488#0#HTML" expanded="true" />
+            <element signature="e#26586#26608#0#HTML" expanded="true" />
+            <element signature="e#28050#29843#0#HTML" expanded="false" />
+            <element signature="e#29848#30976#0#HTML" expanded="false" />
+            <element signature="e#29963#29989#0#HTML" expanded="true" />
+            <element signature="e#30981#31402#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -411,14 +579,11 @@
           <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.39344263" vertical-offset="567" max-vertical-offset="131019">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -453,47 +618,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/public/pgwslider/LICENSE.md">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18421052" vertical-offset="0" max-vertical-offset="570">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14280">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.4" vertical-offset="0" max-vertical-offset="630">
-          <caret line="340" column="96" selection-start-line="340" selection-start-column="96" selection-end-line="340" selection-end-column="96" />
-          <folding>
-            <element signature="e#44#2075#0#HTML" expanded="false" />
-            <element signature="e#2113#3749#0#HTML" expanded="false" />
-            <element signature="e#2412#3723#0#HTML" expanded="false" />
-            <element signature="e#3754#5166#0#HTML" expanded="false" />
-            <element signature="e#5171#17102#0#HTML" expanded="false" />
-            <element signature="e#17107#29037#0#HTML" expanded="false" />
-            <element signature="e#29077#31030#0#HTML" expanded="false" />
-            <element signature="e#31039#32263#0#HTML" expanded="false" />
-            <element signature="e#32272#32733#0#HTML" expanded="false" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/public/pgwslider/README.md">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.433332" vertical-offset="1778" max-vertical-offset="2625">
-          <caret line="111" column="127" selection-start-line="111" selection-start-column="127" selection-end-line="111" selection-end-column="127" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.25641027" vertical-offset="147" max-vertical-offset="966">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82944345" vertical-offset="0" max-vertical-offset="609">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.36885247" vertical-offset="0" max-vertical-offset="854">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pgwslider/pgwslider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4641">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6631579" vertical-offset="0" max-vertical-offset="570">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pgwslider/pgwslider.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="854">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.90983605" vertical-offset="1008" max-vertical-offset="131019">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dist/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2562">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.666666" vertical-offset="268" max-vertical-offset="1092">
+          <caret line="102" column="74" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1157495" vertical-offset="0" max-vertical-offset="1260">
+          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+          <folding>
+            <element signature="e#1090#2726#0#HTML" expanded="false" />
+            <element signature="e#2731#4143#0#HTML" expanded="false" />
+            <element signature="e#2936#2977#0#HTML" expanded="true" />
+            <element signature="e#4148#16079#0#HTML" expanded="false" />
+            <element signature="e#9051#9073#0#HTML" expanded="true" />
+            <element signature="e#10171#10193#0#HTML" expanded="true" />
+            <element signature="e#11291#11313#0#HTML" expanded="true" />
+            <element signature="e#12411#12433#0#HTML" expanded="true" />
+            <element signature="e#13531#13553#0#HTML" expanded="true" />
+            <element signature="e#14651#14673#0#HTML" expanded="true" />
+            <element signature="e#16084#28014#0#HTML" expanded="false" />
+            <element signature="e#20986#21008#0#HTML" expanded="true" />
+            <element signature="e#22106#22128#0#HTML" expanded="true" />
+            <element signature="e#23226#23248#0#HTML" expanded="true" />
+            <element signature="e#24346#24368#0#HTML" expanded="true" />
+            <element signature="e#25466#25488#0#HTML" expanded="true" />
+            <element signature="e#26586#26608#0#HTML" expanded="true" />
+            <element signature="e#28050#29843#0#HTML" expanded="false" />
+            <element signature="e#29848#30976#0#HTML" expanded="false" />
+            <element signature="e#29963#29989#0#HTML" expanded="true" />
+            <element signature="e#30981#31402#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

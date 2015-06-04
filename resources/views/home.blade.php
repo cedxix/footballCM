@@ -1,39 +1,27 @@
 @extends('master')
 
+@section('custom-css')
+    <link rel="stylesheet" href="dist/css/components/sticky.css"/>
+    <link rel="stylesheet" href="pgwslider/pgwslider.min.css"/>
+@endsection
 @section('feature')
-    <div class="">
-        <div class="uk-slidenav-position" data-uk-slideshow>
-            <ul class="uk-slideshow uk-overlay-active" style="height: 400px;overflow: hidden;">
-                <li aria-hidden="false" class="uk-active"
-                    style="animation-duration: 500ms; -webkit-animation-duration: 500ms; height: 411px;">
-                    <div class="uk-cover-background uk-position-cover"
-                         style="background-image: url(img/news/1400063233_8397.jpg);"></div>
-                    <img src="img/news/1400063233_8397.jpg" width="800" height="400" alt=""
-                         style="width: 100%; height: auto;">
-
-                    <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
-                        <div class="">
-                            <h2 class="uk-heading-large feature-title">London Bari Reserves Double Winners
-                                2013/2014</h2>
-                        </div>
-
-
-                    </div>
-                </li>
-                <li aria-hidden="true"
-                    style="animation-duration: 500ms; -webkit-animation-duration: 500ms; height: 411px;"
-                    class="">
-                    <div class="uk-cover-background uk-position-cover"
-                         style="background-image: url(http://getuikit.com/docs/images/placeholder_800x400_2.jpg);"></div>
-                    <img src="http://getuikit.com/docs/images/placeholder_800x400_2.jpg" width="800" height="400" alt=""
-                         style="width: 100%; height: auto;">
-                </li>
-            </ul>
-            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"
-               style="color: rgba(255,255,255,0.4)"></a>
-            <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"
-               style="color: rgba(255,255,255,0.4)"></a>
-        </div>
+    <div class="uk-block tm-block-dark">
+        <ul class="pgwSlider">
+            <li><img src="http://static.pgwjs.com/img/pg/slider/paris.jpg" alt="Paris, France"
+                     data-description="Eiffel Tower and Champ de Mars"></li>
+            <li><img src="http://static.pgwjs.com/img/pg/slider/montreal_mini.jpg" alt="Montréal, QC, Canada"
+                     data-large-src="montreal.jpg"></li>
+            <li>
+                <img src="http://static.pgwjs.com/img/pg/slider/shanghai.jpg">
+                <span>Shanghai, China</span>
+            </li>
+            <li>
+                <a href="http://www.nyc.gov" target="_blank">
+                    <img src="http://static.pgwjs.com/img/pg/slider/new-york.jpg">
+                    <span>New York, NY, USA</span>
+                </a>
+            </li>
+        </ul>
     </div>
 @endsection
 
@@ -252,91 +240,100 @@
 @endsection
 
 @section('aside')
-        <div class="uk-block uk-width-1-1">
-            <div class="uk-block-content">
-                <div class="uk-block-title-grey">
-                    Our news
-                </div>
-
-                <div>
-                    <ul class="uk-list uk-list-line">
-                        <li>
-                            <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
-                                London Bari FC News #0001
-                            </a>
-                            <span class="uk-text-muted">12/06/2015</span>
-                        </li>
-                        <li>
-                            <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
-                                London Bari FC News #0001
-                            </a>
-                            <span class="uk-text-muted">12/06/2015</span>
-                        </li>
-                        <li>
-                            <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
-                                London Bari FC News #0001
-                            </a>
-                            <span class="uk-text-muted">12/06/2015</span>
-                        </li>
-                        <li>
-                            <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
-                                London Bari FC News #0001
-                            </a>
-                            <span class="uk-text-muted">12/06/2015</span>
-                        </li>
-                        <li>
-                            <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
-                                London Bari FC News #0001
-                            </a>
-                            <span class="uk-text-muted">12/06/2015</span>
-                        </li>
-
-
-                    </ul>
-                </div>
+    <div class="uk-block uk-width-1-1">
+        <div class="uk-block-content">
+            <div class="uk-block-title-grey">
+                Our news
             </div>
 
-        </div>
-        <div class="uk-block uk-width-1-1">
-            <div class="uk-block-content">
-                <div class="uk-block-title" style="max-height: 350px;">
-                    Social timeline
-                </div>
-                <div>
-                    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/londonbarifc"
-                       data-widget-id="605084245846069248"
-                       data-chrome="nofooter noborders transparent">
-                        Tweets by @londonbarifc
-                    </a>
-                    <script>
-                        !function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");
-                    </script>
-                </div>
+            <div>
+                <ul class="uk-list uk-list-line">
+                    <li>
+                        <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
+                            London Bari FC News #0001
+                        </a>
+                        <span class="uk-text-muted">12/06/2015</span>
+                    </li>
+                    <li>
+                        <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
+                            London Bari FC News #0001
+                        </a>
+                        <span class="uk-text-muted">12/06/2015</span>
+                    </li>
+                    <li>
+                        <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
+                            London Bari FC News #0001
+                        </a>
+                        <span class="uk-text-muted">12/06/2015</span>
+                    </li>
+                    <li>
+                        <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
+                            London Bari FC News #0001
+                        </a>
+                        <span class="uk-text-muted">12/06/2015</span>
+                    </li>
+                    <li>
+                        <i class="uk-icon uk-icon-minus uk-icon-newspaper-o"> </i><a href="">
+                            London Bari FC News #0001
+                        </a>
+                        <span class="uk-text-muted">12/06/2015</span>
+                    </li>
+
+
+                </ul>
             </div>
         </div>
-        <div class="uk-block uk-width-1-1">
-            <div class="uk-block-content uk-block-no-margin">
-                <div class="uk-block-title-grey">
-                    Follow us on youtube
-                </div>
-                <div>
-                    <iframe width="100%" height="315" src="http://www.youtube.com/embed/KBC_ieTk0CY"
-                            frameborder="0" allowfullscreen></iframe>
-                </div>
+
+    </div>
+    <div class="uk-block uk-width-1-1">
+        <div class="uk-block-content">
+            <div class="uk-block-title" style="max-height: 350px;">
+                Social timeline
+            </div>
+            <div>
+                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/londonbarifc"
+                   data-widget-id="605084245846069248"
+                   data-chrome="nofooter noborders transparent">
+                    Tweets by @londonbarifc
+                </a>
+                <script>
+                    !function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                </script>
             </div>
         </div>
+    </div>
+    <div class="uk-block uk-width-1-1">
+        <div class="uk-block-content uk-block-no-margin">
+            <div class="uk-block-title-grey">
+                Follow us on youtube
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="http://www.youtube.com/embed/KBC_ieTk0CY"
+                        frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('custom-js')
     <script type="application/javascript" src="dist/js/components/slideset.js"></script>
-    <script type="application/javascript" src="dist/js/components/slideshow.js"></script>
-    <script type="application/javascript" src="dist/js/components/slideshow-fx.min.js"></script>
+    <script type="application/javascript" src="pgwslider/pgwslider.js"></script>
+    <script type="application/javascript">
+        $(document).ready(function () {
+            $('.pgwSlider').pgwSlider({
+                'maxHeight': 450,
+                'verticalCentering': true,
+                'adaptiveHeight': false
+            });
+
+        });
+    </script>
 @endsection
