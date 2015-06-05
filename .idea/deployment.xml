@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="London Bari FC Remote">
+    <serverData>
+      <paths name="London Bari FC Remote">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public_html/newweb" local="$PROJECT_DIR$" web="/newweb" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/public/uikit" />
+            <excludedPath local="true" path="$PROJECT_DIR$/public/dist/less" />
+            <excludedPath local="true" path="$PROJECT_DIR$/public/dist/scss" />
+            <excludedPath local="true" path="$PROJECT_DIR$/public/dist/src" />
+            <excludedPath local="true" path="$PROJECT_DIR$/node_modules" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

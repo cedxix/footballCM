@@ -7,10 +7,10 @@
 // Variables
 // ========================================================================
 
-@table-margin-vertical:                         @global-margin;
+@table-margin-vertical:                         @global-margin * 0.25;
 
 @table-caption-color:                           @global-muted-color;
-@table-caption-font-size:                       round((@global-font-size * 0.85)); // 12px / 14px
+@table-caption-font-size:                       round((@global-font-size * 0.75)); // 12px / 14px
 
 @table-striped-background:                      #fafafa;
 
@@ -26,7 +26,7 @@
 // Component
 // ========================================================================
 
-.hook-table() { border-bottom: 1px solid @table-border; }
+.hook-table() { border-bottom: 1px solid @table-border; font-family: 'Droid Sans', sans-serif;}
 
 .hook-table-active() {}
 

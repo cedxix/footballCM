@@ -1,26 +1,31 @@
 @extends('master')
 
 @section('custom-css')
-    <link rel="stylesheet" href="dist/css/components/sticky.css"/>
-    <link rel="stylesheet" href="pgwslider/pgwslider.min.css"/>
+    <link rel="stylesheet" href="/dist/css/components/sticky.css"/>
+    <link rel="stylesheet" href="/dist/css/components/slidenav.css"/>
+    <link rel="stylesheet" href="/dist/css/components/slideshow.css"/>
+
+    <link rel="stylesheet" href="pgwslider/pgwslider.css"/>
 @endsection
 @section('feature')
-    <div class="uk-block tm-block-dark">
+    <div class="uk-block tm-block-dark uk-padding-remove">
         <ul class="pgwSlider">
-            <li><img src="http://static.pgwjs.com/img/pg/slider/paris.jpg" alt="Paris, France"
-                     data-description="Eiffel Tower and Champ de Mars"></li>
-            <li><img src="http://static.pgwjs.com/img/pg/slider/montreal_mini.jpg" alt="Montréal, QC, Canada"
-                     data-large-src="montreal.jpg"></li>
-            <li>
-                <img src="http://static.pgwjs.com/img/pg/slider/shanghai.jpg">
-                <span>Shanghai, China</span>
+            <li><img src="img/news/2891_fernando_torres.jpg"
+                     alt="Glodi Mungu ( captain of London Bari 1st team)"
+                     data-description="scouted at London Bari Soccer Showcase">
             </li>
             <li>
-                <a href="http://www.nyc.gov" target="_blank">
-                    <img src="http://static.pgwjs.com/img/pg/slider/new-york.jpg">
-                    <span>New York, NY, USA</span>
+                <img src="http://static.pgwjs.com/img/pg/slider/montreal_mini.jpg"
+                     alt="Montréal, QC, Canada"
+                     data-large-src="montreal.jpg">
+            </li>
+            <li>
+                <a href="#">
+                    <img src="http://static.pgwjs.com/img/pg/slider/shanghai.jpg"
+                         alt="Shanghai, China">
                 </a>
             </li>
+
         </ul>
     </div>
 @endsection
@@ -325,6 +330,8 @@
 
 @section('custom-js')
     <script type="application/javascript" src="dist/js/components/slideset.js"></script>
+    <script type="application/javascript" src="dist/js/components/slideshow.js"></script>
+
     <script type="application/javascript" src="pgwslider/pgwslider.js"></script>
     <script type="application/javascript">
         $(document).ready(function () {

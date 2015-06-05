@@ -26,31 +26,29 @@
 //
 // ========================================================================
 
-
 // Variables
 // ========================================================================
 
-$dropdown-z-index:                               970 !default;
-$dropdown-width:                                 200px !default;
-$dropdown-margin-top:                            5px !default;
-$dropdown-padding:                               15px !default;
-$dropdown-background:                            #f5f5f5 !default;
-$dropdown-color:                                 #444 !default;
-$dropdown-font-size:                             1rem !default;
-$dropdown-animation:                             uk-fade !default;
+$dropdown-z-index:  970 !default;
+$dropdown-width:  210px !default;
+$dropdown-margin-top:  5px !default;
+$dropdown-padding:  2px !default;
+$dropdown-background:  #f5f5f5 !default;
+$dropdown-color:  $global-contrast-color !default;
+$dropdown-font-size:  1rem !default;
+$dropdown-animation:  uk-fade !default;
 
-$dropdown-divider-border-width:                  1px !default;
-$dropdown-divider-border:                        #ddd !default;
+$dropdown-divider-border-width:  1px !default;
+$dropdown-divider-border:  #ddd !default;
 
-$dropdown-small-padding:                         5px !default;
+$dropdown-small-padding:  5px !default;
 
-$dropdown-navbar-margin:                         0 !default;
-$dropdown-navbar-background:                     #f5f5f5 !default;
-$dropdown-navbar-color:                          #444 !default;
-$dropdown-navbar-animation:                      uk-slide-top-fixed !default;
+$dropdown-navbar-margin:  0 !default;
+$dropdown-navbar-background:  #f5f5f5 !default;
+$dropdown-navbar-color:  $global-contrast-color !default;
+$dropdown-navbar-animation:  uk-slide-top-fixed !default;
 
-$dropdown-scrollable-height:                     200px !default;
-
+$dropdown-scrollable-height:  200px !default;
 
 /* ========================================================================
    Component: Dropdown
@@ -65,26 +63,26 @@ $dropdown-scrollable-height:                     200px !default;
  */
 
 .uk-dropdown {
-    /* 1 */
-    display: none;
-    /* 2 */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: $dropdown-z-index;
-    /* 3 */
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* 4 */
-    width: $dropdown-width;
-    margin-top: $dropdown-margin-top;
-    padding: $dropdown-padding;
-    background: $dropdown-background;
-    color: $dropdown-color;
-    /* 5 */
-    font-size: $dropdown-font-size;
-    vertical-align: top;
-    @include hook-dropdown();
+  /* 1 */
+  display: none;
+  /* 2 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: $dropdown-z-index;
+  /* 3 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 4 */
+  width: $dropdown-width;
+  margin-top: $dropdown-margin-top;
+  padding: $dropdown-padding;
+  background: $dropdown-background;
+  color: $dropdown-color;
+  /* 5 */
+  font-size: $dropdown-font-size;
+  vertical-align: top;
+  @include hook-dropdown();
 }
 
 /*
@@ -94,14 +92,14 @@ $dropdown-scrollable-height:                     200px !default;
  */
 
 .uk-open > .uk-dropdown {
-    /* 1 */
-    display: block;
-    /* 2 */
-    -webkit-animation: $dropdown-animation 0.2s ease-in-out;
-    animation: $dropdown-animation 0.2s ease-in-out;
-    /* 3 */
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
+  /* 1 */
+  display: block;
+  /* 2 */
+  -webkit-animation: $dropdown-animation 0.2s ease-in-out;
+  animation: $dropdown-animation 0.2s ease-in-out;
+  /* 3 */
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
 }
 
 /* Alignment modifiers
@@ -112,8 +110,8 @@ $dropdown-scrollable-height:                     200px !default;
  */
 
 .uk-dropdown-flip {
-    left: auto;
-    right: 0;
+  left: auto;
+  right: 0;
 }
 
 /*
@@ -121,18 +119,19 @@ $dropdown-scrollable-height:                     200px !default;
  */
 
 .uk-dropdown-up {
-    top: auto;
-    bottom: 100%;
-    margin-top: auto;
-    margin-bottom: $dropdown-margin-top;
+  top: auto;
+  bottom: 100%;
+  margin-top: auto;
+  margin-bottom: $dropdown-margin-top;
 }
-
 
 /* Nav in dropdown
  ========================================================================== */
 
-.uk-dropdown .uk-nav { margin: 0 (-$dropdown-padding); }
-
+.uk-dropdown .uk-nav {
+  margin: 0 (-$dropdown-padding);
+  font-family: "Droid Sans", sans-serif;
+}
 
 /* Grid and panel in dropdown
  ========================================================================== */
@@ -146,59 +145,75 @@ $dropdown-scrollable-height:                     200px !default;
  * Higher specificity to override large gutter
  */
 
-.uk-grid .uk-dropdown-grid + .uk-dropdown-grid { margin-top: $dropdown-padding; }
+.uk-grid .uk-dropdown-grid + .uk-dropdown-grid {
+  margin-top: $dropdown-padding;
+}
 
 /* Panels */
-.uk-dropdown-grid > [class*='uk-width-'] > .uk-panel + .uk-panel { margin-top: $dropdown-padding; }
+.uk-dropdown-grid > [class*='uk-width-'] > .uk-panel + .uk-panel {
+  margin-top: $dropdown-padding;
+}
 
 /* Tablet and bigger */
 @media (min-width: $breakpoint-medium) {
 
-    /*
-     * Horizontal gutter
-     */
+  /*
+   * Horizontal gutter
+   */
+  .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid {
+    margin-left: -$dropdown-padding;
+    margin-right: -$dropdown-padding;
+  }
 
-    .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid {
-        margin-left: -$dropdown-padding ;
-        margin-right: -$dropdown-padding;
-    }
+  .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-'] {
+    padding-left: $dropdown-padding;
+    padding-right: $dropdown-padding;
+  }
 
-    .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-'] {
-        padding-left: $dropdown-padding;
-        padding-right: $dropdown-padding;
-    }
+  /*
+   * Column divider
+   */
+  .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
+    border-left: $dropdown-divider-border-width solid $dropdown-divider-border;
+  }
 
-    /*
-     * Column divider
-     */
+  /*
+   * Width multiplier for dropdown columns
+   */
+  .uk-dropdown-width-2:not(.uk-dropdown-stack) {
+    width: ($dropdown-width * 2);
+  }
 
-    .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) { border-left: $dropdown-divider-border-width solid $dropdown-divider-border; }
+  .uk-dropdown-width-3:not(.uk-dropdown-stack) {
+    width: ($dropdown-width * 3);
+  }
 
-    /*
-     * Width multiplier for dropdown columns
-     */
+  .uk-dropdown-width-4:not(.uk-dropdown-stack) {
+    width: ($dropdown-width * 4);
+  }
 
-    .uk-dropdown-width-2:not(.uk-dropdown-stack) { width: ($dropdown-width * 2); }
-    .uk-dropdown-width-3:not(.uk-dropdown-stack) { width: ($dropdown-width * 3); }
-    .uk-dropdown-width-4:not(.uk-dropdown-stack) { width: ($dropdown-width * 4); }
-    .uk-dropdown-width-5:not(.uk-dropdown-stack) { width: ($dropdown-width * 5); }
+  .uk-dropdown-width-5:not(.uk-dropdown-stack) {
+    width: ($dropdown-width * 5);
+  }
 
 }
 
 /* Phone landscape and smaller */
 @media (max-width: $breakpoint-small-max) {
 
-    /*
-     * Stack columns and take full width
-     */
+  /*
+   * Stack columns and take full width
+   */
+  .uk-dropdown-grid > [class*='uk-width-'] {
+    width: 100%;
+  }
 
-    .uk-dropdown-grid > [class*='uk-width-'] { width: 100%; }
-
-    /*
-     * Vertical gutter
-     */
-
-    .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) { margin-top: $dropdown-padding; }
+  /*
+   * Vertical gutter
+   */
+  .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
+    margin-top: $dropdown-padding;
+  }
 
 }
 
@@ -206,11 +221,13 @@ $dropdown-scrollable-height:                     200px !default;
 * Stack grid columns
 */
 
-.uk-dropdown-stack > .uk-dropdown-grid > [class*='uk-width-'] { width: 100%; }
+.uk-dropdown-stack > .uk-dropdown-grid > [class*='uk-width-'] {
+  width: 100%;
+}
 
-.uk-dropdown-stack > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) { margin-top: $dropdown-padding; }
-
-
+.uk-dropdown-stack > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
+  margin-top: $dropdown-padding;
+}
 
 /* Modifier `uk-dropdown-small`
  ========================================================================== */
@@ -220,34 +237,34 @@ $dropdown-scrollable-height:                     200px !default;
  */
 
 .uk-dropdown-small {
-    min-width: 150px;
-    width: auto;
-    padding: $dropdown-small-padding;
-    white-space: nowrap;
+  min-width: 150px;
+  width: auto;
+  padding: $dropdown-small-padding;
+  white-space: nowrap;
 }
 
 /*
  * Nav in dropdown
  */
 
-.uk-dropdown-small .uk-nav { margin: 0 (-$dropdown-small-padding); }
-
+.uk-dropdown-small .uk-nav {
+  margin: 0 (-$dropdown-small-padding);
+}
 
 /* Modifier: `uk-dropdown-navbar`
  ========================================================================== */
 
 .uk-dropdown-navbar {
-    margin-top: $dropdown-navbar-margin;
-    background: $dropdown-navbar-background;
-    color: $dropdown-navbar-color;
-    @include hook-dropdown-navbar();
+  margin-top: $dropdown-navbar-margin;
+  background: $dropdown-navbar-background;
+  color: $dropdown-navbar-color;
+  @include hook-dropdown-navbar();
 }
 
 .uk-open > .uk-dropdown-navbar {
-    -webkit-animation: $dropdown-navbar-animation 0.2s ease-in-out;
-    animation: $dropdown-navbar-animation 0.2s ease-in-out;
+  -webkit-animation: $dropdown-navbar-animation 0.2s ease-in-out;
+  animation: $dropdown-navbar-animation 0.2s ease-in-out;
 }
-
 
 /* Modifier `uk-dropdown-scrollable`
  ========================================================================== */
@@ -257,10 +274,9 @@ $dropdown-scrollable-height:                     200px !default;
  */
 
 .uk-dropdown-scrollable {
-    overflow-y: auto;
-    max-height: $dropdown-scrollable-height;
+  overflow-y: auto;
+  max-height: $dropdown-scrollable-height;
 }
-
 
 // Hooks
 // ========================================================================
@@ -268,5 +284,7 @@ $dropdown-scrollable-height:                     200px !default;
 @include hook-dropdown-misc();
 
 // @mixin hook-dropdown(){}
+
 // @mixin hook-dropdown-navbar(){}
+
 // @mixin hook-dropdown-misc(){}

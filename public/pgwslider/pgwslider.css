@@ -11,7 +11,7 @@
     color: #fff;
 }
 
-.pgwSlider a{
+.pgwSlider a {
     display: block;
     text-decoration: none;
     color: #fff;
@@ -19,7 +19,7 @@
 
 .pgwSlider .ps-current {
     float: left;
-    width: 74%;
+    width: 75%;
     overflow: hidden;
     height: inherit;
     position: relative;
@@ -53,16 +53,21 @@
     position: absolute;
     width: 100%;
     padding: 12px;
-    background: rgba(0, 0, 0, 0.7);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    background: rgba(182, 24, 20,1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     left: 0;
     bottom: 0;
     display: none;
     z-index: 3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
 }
 
+.pgwSlider .ps-caption span{
+    color:#fff;
+}
 ul.pgwSlider,
-.pgwSlider  ul {
+.pgwSlider ul {
     float: right;
     width: 25%;
     padding: 0;
@@ -100,7 +105,7 @@ ul.pgwSlider > li span,
     bottom: 0;
     padding: 5px;
     background: rgba(0, 0, 0, 0.7);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -120,14 +125,14 @@ ul.pgwSlider > li img,
 }
 
 .pgwSlider .ps-prevIcon {
-    border-color:transparent #fff transparent;
+    border-color: transparent #fff transparent;
     border-style: solid;
     border-width: 10px 10px 10px 0;
     display: block;
 }
 
 .pgwSlider .ps-nextIcon {
-    border-color:transparent #fff transparent;
+    border-color: transparent #fff transparent;
     border-style: solid;
     border-width: 10px 0 10px 10px;
     display: block;
@@ -135,7 +140,7 @@ ul.pgwSlider > li img,
 
 .pgwSlider .ps-current .ps-prev {
     background: rgba(0, 0, 0, 0.5);
-    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99000000', endColorstr='#99000000');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
     border: 1px solid #777;
     border-left: 0;
@@ -149,7 +154,7 @@ ul.pgwSlider > li img,
 
 .pgwSlider .ps-current .ps-next {
     background: rgba(0, 0, 0, 0.5);
-    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99000000', endColorstr='#99000000');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
     border: 1px solid #777;
     border-right: 0;

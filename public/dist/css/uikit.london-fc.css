@@ -1940,7 +1940,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  ========================================================================== */
 .uk-navbar {
   background: #b61814;
-  color: #444444;
+  color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 4px;
 }
@@ -1987,7 +1987,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 2 */
   color: #ffffff;
   font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", sans-serif;
   font-weight: normal;
   font-family: 'Droid Sans', sans-serif;
   margin-top: -1px;
@@ -2010,7 +2010,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li.uk-open > a {
   background-color: #fafafa;
-  color: #444444;
+  color: #000000;
   /* 3 */
   outline: none;
   position: relative;
@@ -2158,15 +2158,15 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   float: right;
 }
 /*
-     * Apply same `border-radius` as `uk-navbar`
-     */
+   * Apply same `border-radius` as `uk-navbar`
+   */
 .uk-navbar-nav:first-child > li:first-child > a {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 /*
-     * Sub-modifier `uk-navbar-flip`
-     */
+   * Sub-modifier `uk-navbar-flip`
+   */
 /* Collapse border */
 .uk-navbar-flip .uk-navbar-nav > li > a {
   margin-left: 0;
@@ -2182,8 +2182,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   border-bottom-right-radius: 4px;
 }
 /*
-     * Sub-modifier `uk-navbar-attached`
-     */
+   * Sub-modifier `uk-navbar-attached`
+   */
 .uk-navbar-attached {
   border-top-color: transparent;
   border-left-color: transparent;
@@ -2958,18 +2958,19 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 2 */
   width: 100%;
   /* 3 */
-  margin-bottom: 15px;
+  margin-bottom: 3.75px;
 }
 /*
  * Add margin if adjacent element
  */
 * + .uk-table {
-  margin-top: 15px;
+  margin-top: 3.75px;
 }
 .uk-table th,
 .uk-table td {
   padding: 8px 8px;
   border-bottom: 1px solid #dddddd;
+  font-family: 'Droid Sans', sans-serif;
 }
 /*
  * Set alignment
@@ -2988,7 +2989,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  */
 .uk-table caption,
 .uk-table tfoot {
-  font-size: 12px;
+  font-size: 11px;
   font-style: italic;
 }
 .uk-table caption {
@@ -5782,10 +5783,10 @@ a.uk-badge:hover {
   /* 3 */
   margin: 0;
   /* 4 */
-  padding: 4px;
+  padding: 10px;
   border: 1px solid #dddddd;
-  background: #f2f2f2;
-  border-radius: 4px;
+  background: #ffffff;
+  border-radius: 0;
 }
 /*
  * Hover state for `a` elements
@@ -5805,7 +5806,7 @@ a.uk-thumbnail:focus {
 /* Caption
  ========================================================================== */
 .uk-thumbnail-caption {
-  padding-top: 4px;
+  padding-top: 10px;
   text-align: center;
   color: #444444;
 }
@@ -6770,16 +6771,15 @@ a.uk-thumbnail:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 4 */
-  width: 200px;
+  width: 210px;
   margin-top: 5px;
-  padding: 15px;
+  padding: 2px;
   background: #ffffff;
-  color: #444444;
+  color: #ffffff;
   /* 5 */
   font-size: 1rem;
   vertical-align: top;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
+  border: 1px solid #b61814;
 }
 /*
  * 1. Show dropdown
@@ -6817,7 +6817,8 @@ a.uk-thumbnail:focus {
 /* Nav in dropdown
  ========================================================================== */
 .uk-dropdown .uk-nav {
-  margin: 0 -15px;
+  margin: 0 -2px;
+  font-family: "Droid Sans", sans-serif;
 }
 /* Grid and panel in dropdown
  ========================================================================== */
@@ -6829,60 +6830,60 @@ a.uk-thumbnail:focus {
  * Higher specificity to override large gutter
  */
 .uk-grid .uk-dropdown-grid + .uk-dropdown-grid {
-  margin-top: 15px;
+  margin-top: 2px;
 }
 /* Panels */
 .uk-dropdown-grid > [class*='uk-width-'] > .uk-panel + .uk-panel {
-  margin-top: 15px;
+  margin-top: 2px;
 }
 /* Tablet and bigger */
 @media (min-width: 768px) {
   /*
-     * Horizontal gutter
-     */
+   * Horizontal gutter
+   */
   .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -2px;
+    margin-right: -2px;
   }
   .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-'] {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
   /*
-     * Column divider
-     */
+   * Column divider
+   */
   .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
-    border-left: 1px solid #dddddd;
+    border-left: 1px solid #ffffff;
   }
   /*
-     * Width multiplier for dropdown columns
-     */
+   * Width multiplier for dropdown columns
+   */
   .uk-dropdown-width-2:not(.uk-dropdown-stack) {
-    width: 400px;
+    width: 420px;
   }
   .uk-dropdown-width-3:not(.uk-dropdown-stack) {
-    width: 600px;
+    width: 630px;
   }
   .uk-dropdown-width-4:not(.uk-dropdown-stack) {
-    width: 800px;
+    width: 840px;
   }
   .uk-dropdown-width-5:not(.uk-dropdown-stack) {
-    width: 1000px;
+    width: 1050px;
   }
 }
 /* Phone landscape and smaller */
 @media (max-width: 767px) {
   /*
-     * Stack columns and take full width
-     */
+   * Stack columns and take full width
+   */
   .uk-dropdown-grid > [class*='uk-width-'] {
     width: 100%;
   }
   /*
-     * Vertical gutter
-     */
+   * Vertical gutter
+   */
   .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
-    margin-top: 15px;
+    margin-top: 2px;
   }
 }
 /*
@@ -6892,7 +6893,7 @@ a.uk-thumbnail:focus {
   width: 100%;
 }
 .uk-dropdown-stack > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
-  margin-top: 15px;
+  margin-top: 2px;
 }
 /* Modifier `uk-dropdown-small`
  ========================================================================== */
@@ -6914,9 +6915,9 @@ a.uk-thumbnail:focus {
 /* Modifier: `uk-dropdown-navbar`
  ========================================================================== */
 .uk-dropdown-navbar {
-  margin-top: 6px;
-  background: #ffffff;
-  color: #444444;
+  margin-top: 5px;
+  background: #b61814;
+  color: #ffffff;
   left: -1px;
 }
 .uk-open > .uk-dropdown-navbar {
@@ -7322,7 +7323,7 @@ a.uk-thumbnail:focus {
   color: #e28327 !important;
 }
 .uk-text-danger {
-  color: #d85030 !important;
+  color: #c51827 !important;
 }
 .uk-text-contrast {
   color: #ffffff !important;
@@ -7696,6 +7697,16 @@ a.uk-thumbnail:focus {
 .uk-heading-large {
   font-size: 36px;
   line-height: 42px;
+}
+.uk-heading-large .title {
+  margin: 0;
+  padding: 20px 28px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.1)));
+  background-image: -moz-linear-gradient(center top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+  border-bottom: 1px solid #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 /* Tablet and bigger */
 @media (min-width: 768px) {
@@ -8376,4 +8387,16 @@ a.uk-thumbnail:focus {
   h3 {
     page-break-after: avoid;
   }
+}
+.uk-nav-navbar > li > a {
+  color: #ffffff;
+}
+.uk-nav-navbar > li > a:hover,
+.uk-nav-navbar > li > a:focus {
+  background: #fafafa;
+  color: #c51827;
+  /* 2 */
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 }

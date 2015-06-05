@@ -13,8 +13,7 @@
 
 Route::get('/', 'HomeController@index');
 Route::match(['POST','GET'],'test/{name}', 'HomeController@test');
-
-//Route::controllers([
-//	'auth' => 'Auth\AuthController',
-//	'password' => 'Auth\PasswordController',
-//]);
+// Team and fixtures
+Route::get('teams-fixtures/', 'TeamController@index');
+// Players
+Route::get('players/', 'PlayerController@player_details');
