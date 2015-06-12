@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/dist/css/components/sticky.css"/>
     <link rel="stylesheet" href="/dist/css/custom.css"/>
     @yield('custom-css')
-
     <title>London Bari FC</title>
 </head>
 <body>
@@ -39,17 +38,17 @@
 
                         <div class="uk-dropdown uk-dropdown-navbar">
                             <ul class="uk-nav uk-nav-navbar">
-                                <li><a href="/teams-fixtures">London Bari FC Senior</a></li>
-                                <li><a href="/teams-fixtures">London Bari FC Reserve</a></li>
-                                <li><a href="/teams-fixtures">London Bari FC Reserve II</a></li>
+                                <li><a href="{{ route('getFixtures') }}">London Bari FC Senior</a></li>
+                                <li><a href="{{ route('getFixtures') }}">London Bari FC Reserve</a></li>
+                                <li><a href="{{ route('getFixtures') }}">London Bari FC Reserve II</a></li>
                             </ul>
                         </div>
 
                     </li>
 
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/news">News & blog</a></li>
-                    <li><a href="/store" class="uk-text-muted">Store</a></li>
+                    <li><a href="{{ route('getGallery') }}">Gallery</a></li>
+                    <li><a href="{{ route('getNews') }}">Club News</a></li>
+                    <li><a href="#" class="uk-text-muted">Store</a></li>
                 </ul>
             </div>
         </div>
@@ -70,29 +69,69 @@
             </div>
 
 
-            <div class="uk-width-2-5 uk-block" style="padding-right: 30px">
+            <div class="uk-width-2-5 uk-block" style="padding-right: 10px">
                 @yield('aside')
             </div>
         </div>
     </div>
     {{--FOOTER START --}}
     <div class="uk-width-1-1 uk-container uk-container-center uk-padding-remove" style="background: #333333;">
+        <h1 class="uk-text-center uk-text-contrast">Our Sponsors</h1>
 
-        <ul class="uk-grid" data-uk-grid-margin style="padding: 10px;">
+        <div class="uk-grid" data-uk-grid-margin="">
+            <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
+                <figure class="uk-overlay uk-overlay-hover">
+                    <img width="350" height="150"
+                         src="/img/sponsor/grababuildersponsorlogo.png"
+                         alt="">
+                    <figcaption
+                            class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div>Grababuilder</div>
+                    </figcaption>
+                    <a class="uk-position-cover" href="#"></a>
+                </figure>
+            </div>
 
-            <!-- These elements have a width in percent -->
-            <li class="uk-width-medium-1-5"><img src="/img/sponsor/grababuildersponsorlogo.png"
-                                                 alt="Graba builder sponsor logo"/></li>
-            <li class="uk-width-medium-1-5"><img src="/img/sponsor/Ray-Investments.jpg"
-                                                 alt="Graba builder sponsor logo"/></li>
-            <li class="uk-width-medium-1-5"><img src="/img/sponsor/sxsports.jpg" alt="Graba builder sponsor logo"/></li>
-            <li class="uk-width-medium-1-5"><img src="/img/sponsor/UEL.png" alt="Graba builder sponsor logo"/></li>
+            <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
+                <figure class="uk-overlay uk-overlay-hover">
+                    <img width="350" height="150"
+                         src="/img/sponsor/Ray-Investments.jpg"
+                         alt="">
+                    <figcaption
+                            class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div>Client Name</div>
+                    </figcaption>
+                    <a class="uk-position-cover" href="#"></a>
+                </figure>
+            </div>
 
-            <!-- These elements have a width in pixel -->
-            <li class="uk-width" style="width: 100px;">...</li>
-            <li class="uk-width" style="width: 150px;">...</li>
+            <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
+                <figure class="uk-overlay uk-overlay-hover">
+                    <img width="350" height="150"
+                         src="/img/sponsor/sxsports.jpg"
+                         alt="">
+                    <figcaption
+                            class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div>Client Name</div>
+                    </figcaption>
+                    <a class="uk-position-cover" href="#"></a>
+                </figure>
+            </div>
 
-        </ul>
+            <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-6">
+                <figure class="uk-overlay uk-overlay-hover">
+                    <img width="350" height="150"
+                         src="/img/sponsor/UEL.png"
+                         alt="">
+                    <figcaption
+                            class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                        <div>Client Name</div>
+                    </figcaption>
+                    <a class="uk-position-cover" href="#"></a>
+                </figure>
+            </div>
+
+        </div>
     </div>
     {{--FOOTER END--}}
 </div>

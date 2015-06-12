@@ -51,8 +51,11 @@
                             <span class="uk-h5 ">LONDON BARI FC VS. BLUE BIRD</span>
                             <span class="uk-h5">3:00 pm</span>
                         </div>
-                        <div class="uk-row uk-text-bold">
-                            <a href="#"><i class="uk-icon uk-icon-credit-card"></i> Tickets & More</a>
+                        <div class="uk-row uk-text-bold uk-padding-small-top">
+                            <a href="/teams-fixtures/fixtures">
+                                <i class="uk-icon uk-icon-credit-card"></i>
+                                Tickets & More
+                            </a>
                         </div>
                     </div>
                     <div class="uk-width-1-6">

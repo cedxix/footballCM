@@ -1,21 +1,21 @@
-@extends('master')
+@extends('team-fixtures.master')
 
 @section('custom-css')
 @endsection
 
 @section('feature')
 
-    @section('heading-block')
+@section('heading-block')
     <div class="uk-width-1-1 uk-heading-large">
         <div class="uk-block uk-padding-remove">
             <div class=" title">@yield('title','London Bari FC')</div>
         </div>
     </div>
-    @show
+@show
 
-    <div class="uk-block uk-width-1-1">
-            @yield('full_content')
-    </div>
+@section('full-size')
+@show
+
 
 @endsection
 @section('content')
@@ -72,7 +72,8 @@
                             <span class="uk-h5">3:00 pm</span>
                         </div>
                         <div class="uk-row uk-text-bold">
-                            <a href="/teams-fixtures/fixtures"><i class="uk-icon uk-icon-credit-card"></i> Tickets & More</a>
+                            <a href="/teams-fixtures/fixtures"><i class="uk-icon uk-icon-credit-card"></i> Tickets &
+                                More</a>
                         </div>
                     </div>
                     <div class="uk-width-1-6">
